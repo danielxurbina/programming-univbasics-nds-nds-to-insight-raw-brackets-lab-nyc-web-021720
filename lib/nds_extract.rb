@@ -55,7 +55,12 @@ def directors_gross(director_data)
     movie_index += 1
   end
   
-  
-  p total_gross
+  # then we return the total gross back to the original variable which at first was set to 0 but now is filled with plenty of numbers!
+  total_gross
 end
+
+# the new hash should look like this after the program executes
+
+#
+
   
