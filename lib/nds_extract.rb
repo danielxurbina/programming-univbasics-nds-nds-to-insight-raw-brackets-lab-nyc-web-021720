@@ -35,16 +35,27 @@ end
 #we create a method directors gross that passes an argument director data 
 def directors_gross(director_data)
   
-  #
+  # we create a movie index which is equal to 0 because we want to now find the total gross for the director
+  # we can only find this out by digging in deeper, reason why we created a movie index 
+  # we then created a variable "movies" that is equal to "director data" that we just passed through the method
+  # the symbol is inside the brackets because we are now accessing the information inside :movies (Hence how we are going deeper!)
+  # the total gross will be equal to 0 because we have yet to add onto it (that will change very soon!)
   movie_index = 0
   movies = director_data[:movies]
   total_gross = 0
 
+
+  # we create a while loop so we can perform what's needed to get the gross for each director
+  # while the movie index (which is 0) is less than the length of each movies directed it will execute
   while movie_index < movies.length do 
+    
+    # we created a variable total gross which will add the total gross to the movies worldwide_gross
+    # then we iterate the index by 1 so we can keep adding the gross onto the total gross for that specific director 
     total_gross += movies[movie_index][:worldwide_gross]
     movie_index += 1
   end
   
-  total_gross
+  
+  p total_gross
 end
   
