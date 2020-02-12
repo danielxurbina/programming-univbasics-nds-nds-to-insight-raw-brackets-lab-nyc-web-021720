@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
-pp directors_database
+#pp directors_database
 
 def directors_totals(nds)
 result = {}
@@ -15,7 +15,7 @@ while director_index < nds.length do
 
 end
 
-result
+p result
 
 end
 
